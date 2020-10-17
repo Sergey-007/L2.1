@@ -1,0 +1,128 @@
+10-03 23:56:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Неверное количество столбцов
+Column count does not match; SQL statement:
+insert into users (login, password) values ('admin, adminpass') [21002-187]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.command.dml.Insert.prepare(Insert.java:265)
+	at org.h2.command.Parser.prepareCommand(Parser.java:247)
+	at org.h2.engine.Session.prepareLocal(Session.java:461)
+	at org.h2.engine.Session.prepareCommand(Session.java:403)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1189)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:170)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:158)
+	at executor.Executor.execUpdate(Executor.java:24)
+	at dao.UsersDAO.insertUser(UsersDAO.java:49)
+	at dao.DBService.addUser(DBService.java:39)
+	at accounts.AccountService.addNewUser(AccountService.java:26)
+	at main.Main.main(Main.java:28)
+10-03 23:56:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Столбец "USER_NAME" не найден
+Column "USER_NAME" not found; SQL statement:
+select login, password from users where user_name='admin' [42122-187]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:147)
+	at org.h2.expression.Comparison.optimize(Comparison.java:178)
+	at org.h2.command.dml.Select.prepare(Select.java:880)
+	at org.h2.command.Parser.prepareCommand(Parser.java:247)
+	at org.h2.engine.Session.prepareLocal(Session.java:461)
+	at org.h2.engine.Session.prepareCommand(Session.java:403)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1189)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:170)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:158)
+	at executor.Executor.execQuery(Executor.java:32)
+	at dao.UsersDAO.getUserByLogin(UsersDAO.java:37)
+	at dao.DBService.addUser(DBService.java:41)
+	at accounts.AccountService.addNewUser(AccountService.java:26)
+	at main.Main.main(Main.java:28)
+10-03 23:56:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Неверное количество столбцов
+Column count does not match; SQL statement:
+insert into users (login, password) values ('test, testpass') [21002-187]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.command.dml.Insert.prepare(Insert.java:265)
+	at org.h2.command.Parser.prepareCommand(Parser.java:247)
+	at org.h2.engine.Session.prepareLocal(Session.java:461)
+	at org.h2.engine.Session.prepareCommand(Session.java:403)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1189)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:170)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:158)
+	at executor.Executor.execUpdate(Executor.java:24)
+	at dao.UsersDAO.insertUser(UsersDAO.java:49)
+	at dao.DBService.addUser(DBService.java:39)
+	at accounts.AccountService.addNewUser(AccountService.java:26)
+	at main.Main.main(Main.java:29)
+10-03 23:56:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Столбец "USER_NAME" не найден
+Column "USER_NAME" not found; SQL statement:
+select login, password from users where user_name='test' [42122-187]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:147)
+	at org.h2.expression.Comparison.optimize(Comparison.java:178)
+	at org.h2.command.dml.Select.prepare(Select.java:880)
+	at org.h2.command.Parser.prepareCommand(Parser.java:247)
+	at org.h2.engine.Session.prepareLocal(Session.java:461)
+	at org.h2.engine.Session.prepareCommand(Session.java:403)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1189)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:170)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:158)
+	at executor.Executor.execQuery(Executor.java:32)
+	at dao.UsersDAO.getUserByLogin(UsersDAO.java:37)
+	at dao.DBService.addUser(DBService.java:41)
+	at accounts.AccountService.addNewUser(AccountService.java:26)
+	at main.Main.main(Main.java:29)
+10-03 23:57:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Неверное количество столбцов
+Column count does not match; SQL statement:
+insert into users (login, password) values ('admin, adminpass') [21002-187]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.command.dml.Insert.prepare(Insert.java:265)
+	at org.h2.command.Parser.prepareCommand(Parser.java:247)
+	at org.h2.engine.Session.prepareLocal(Session.java:461)
+	at org.h2.engine.Session.prepareCommand(Session.java:403)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1189)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:170)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:158)
+	at executor.Executor.execUpdate(Executor.java:24)
+	at dao.UsersDAO.insertUser(UsersDAO.java:49)
+	at dao.DBService.addUser(DBService.java:39)
+	at accounts.AccountService.addNewUser(AccountService.java:26)
+	at main.Main.main(Main.java:28)
+10-03 23:57:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Нет данных
+No data is available [2000-187]
+10-03 23:57:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Неверное количество столбцов
+Column count does not match; SQL statement:
+insert into users (login, password) values ('test, testpass') [21002-187]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.command.dml.Insert.prepare(Insert.java:265)
+	at org.h2.command.Parser.prepareCommand(Parser.java:247)
+	at org.h2.engine.Session.prepareLocal(Session.java:461)
+	at org.h2.engine.Session.prepareCommand(Session.java:403)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1189)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:170)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:158)
+	at executor.Executor.execUpdate(Executor.java:24)
+	at dao.UsersDAO.insertUser(UsersDAO.java:49)
+	at dao.DBService.addUser(DBService.java:39)
+	at accounts.AccountService.addNewUser(AccountService.java:26)
+	at main.Main.main(Main.java:29)
+10-03 23:57:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Нет данных
+No data is available [2000-187]
